@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Arg 87</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Staatliches&display=swap');
+
+        body {
+            font-family: 'Roboto Slab', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #3b2e2e;
+        }
+        header {
+            background-color: #3b2e2e;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+        .logo {
+            font-family: 'Staatliches', cursive;
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 20px;
+            background-color: #f0e7df;
+        }
+        .product {
+            border: 2px solid #3b2e2e;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            background-color: #fdf7f3;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #3b2e2e;
+        }
+        .product h3 {
+            font-family: 'Staatliches', cursive;
+            margin: 15px 0 5px;
+        }
+        .product p {
+            font-size: 1.2em;
+            margin: 5px 0 15px;
+        }
+        .product button {
+            background-color: #3b2e2e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .product button:hover {
+            background-color: #70594b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Style Arg 87</div>
+        <p>Todos los talles disponibles</p>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2149826/8iyw.jpg" alt="overcize BASIC">
+                <h3>overcize BASIC</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize BASIC')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2166790/5kyv.jpg" alt="overcize MFPSHIF BLACK AND WHITE">
+                <h3>overcize MFPSHIF BLACK AND WHITE</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize MFPSHIF BLACK AND WHITE')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2149826/1iyw.jpg" alt="overcize CENSURE REMEMBER">
+                <h3>overcize CENSURE REMEMBER</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize CENSURE REMEMBER')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2166790/2kyv.jpg" alt="overcize REUZ WORLDWIDE">
+                <h3>overcize REUZ WORLDWIDE</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize REUZ WORLDWIDE')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2166790/3kyv.jpg" alt="overcize REUZ BASIC">
+                <h3>overcize REUZ BASIC</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize REUZ BASIC')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2320070/1ivl_thumb.jpg" alt="overcize ARCHIVE WORLD">
+                <h3>overcize ARCHIVE WORLD</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize ARCHIVE WORLD')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2272078/1lyo.jpg" alt="overcize HEART ON FIRE">
+                <h3>overcize HEART ON FIRE</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize HEART ON FIRE')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2164303/9vxf.jpg" alt="overcize REPRESENT THE FLOW">
+                <h3>overcize REPRESENT THE FLOW</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize REPRESENT THE FLOW')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2150688/1hrm.jpg" alt="overcize 012 GREEN">
+                <h3>overcize 012 GREEN</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize 012 GREEN')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2166790/7kyv.jpg" alt="overcize MFPSHIF GREEN">
+                <h3>overcize MFPSHIF GREEN</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize MFPSHIF GREEN')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2150688/4hrm.jpg" alt="overcize 012 WHITE">
+                <h3>overcize 012 WHITE</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize 012 WHITE')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2320070/8xja.jpg" alt="overcize ARCHIVE GREY">
+                <h3>overcize ARCHIVE GREY</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize ARCHIVE GREY')">Comprar</button>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2 style="text-align: center; margin-top: 40px; grid-column: span 2;">Bermudas Bordadas</h2>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2489956/1aof.jpg" alt="Blac kait">
+                <h3>Blac kait</h3>
+                <p>$29,999</p>
+                <button onclick="comprarProducto('Blac kait')">Comprar</button>
+            </div>
+            
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2489956/2aof.jpg" alt="Acshock">
+                <h3>Acshock</h3>
+                <p>$29,999</p>
+                <button onclick="comprarProducto('Acshock')">Comprar</button>
+            </div>
+            
+        </section>
+
+        <section class="products">
+            <h2 style="text-align: center; margin-top: 40px; grid-column: span 2;">Remeras Boxy Fit</h2>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2468414/2zxh.jpg" alt="ESSENTIAL 1">
+                <h3>ESSENTIAL 1</h3>
+                <p>$22,000</p>
+                <button onclick="comprarProducto('ESSENTIAL 1')">Comprar</button>
+            </div>
+        
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2321305/2olt.jpg" alt="DESTINY 1">
+                <h3>DESTINY 1</h3>
+                <p>$22,000</p>
+                <button onclick="comprarProducto('DESTINY 1')">Comprar</button>
+            </div>
+            
+        </section>
+    </main>
+
+    <script>
+        function comprarProducto(producto) {
+            const mensaje = `Hola, estoy interesado/a en el producto: ${producto}. ¿Está disponible?`;
+            const numeroWhatsapp = "5491132806407"; // Reemplaza con tu número de WhatsApp
+            window.location.href = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensaje)}`;
+        }
+    </script>
+</body>
+</html>
